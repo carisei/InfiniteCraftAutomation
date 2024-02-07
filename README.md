@@ -9,7 +9,7 @@ Febuary 7, 2024
 
 Fixed an issue where firstElement and secondElement would begin to increment to 11, 111, 1111, ad infinitum.
 
-Changed variables firstElement and secondElement from let to var allowing them to be manual set once script is running.
+Changed variables for firstElement and secondElement from let to var allowing them to be manually set once script is running.
 
 ```
 let maxElementReachedForElement = {};
