@@ -5,11 +5,11 @@ Saw https://neal.fun/infinite-craft/.
 Automated it in C# because I can. Find below the javascript version if you just want to quickly do this in a browser.
 
 ## Javascript version
-Febuary 7, 2024
+**Febuary 7, 2024**
 
-Fixed an issue where firstElement and secondElement would begin to increment to 11, 111, 1111, ad infinitum.
+- Fixed an issue where firstElement and secondElement would begin to increment to 11, 111, 1111, ad infinitum.
 
-Changed variables for firstElement and secondElement from let to var allowing them to be manually set once script is running.
+- Changed variables for firstElement and secondElement from let to var allowing them to be manually set once script is running.
 
 ```
 let maxElementReachedForElement = {};
