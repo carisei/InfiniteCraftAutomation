@@ -9,11 +9,11 @@ Febuary 7, 2024
 
 Fixed an issue where firstElement and secondElement would begin to increment to 11, 111, 1111, ad infinitum.
 
-Changed variables declared as let to var allowing manual setting once script is running.
+Changed variables firstElement and secondElement from let to var allowing them to be manual set once script is running.
 
 ```
-var maxElementReachedForElement = {};
-var totalElements = 0;
+let maxElementReachedForElement = {};
+let totalElements = 0;
 var firstElement = 0;
 var secondElement = 0;
 
@@ -27,7 +27,7 @@ setInterval(function() {
 		if (secondElement === 0) {
 			maxElementReachedForElement[firstElement] = totalElements;	
 			if (Object.keys(maxElementReachedForElement).some(item => maxElementReachedForElement[item] < totalElements)) {
-				var prevStart = Object.keys(maxElementReachedForElement).find(item => maxElementReachedForElement[item] < totalElements);
+				let prevStart = Object.keys(maxElementReachedForElement).find(item => maxElementReachedForElement[item] < totalElements);
 				firstElement = prevStart;
 				secondElement = maxElementReachedForElement[prevStart]; // Start from previous end
 			} else {
